@@ -9,6 +9,8 @@
     --shadow-color: rgba(0, 0, 0, 0.05);
     
     --font-family: 'Inter', sans-serif;
+    --shadow-primary-color: #fff;
+    --shadow-secondary-color: #f8f8f8;
 }
 
 body.dark-mode {
@@ -20,6 +22,8 @@ body.dark-mode {
     --text-muted: #adb5bd;
     --border-color: #495057;
     --shadow-color: rgba(0, 0, 0, 0.2);
+    --shadow-primary-color: #fff;
+    --shadow-secondary-color: #0056b3;
 }
 
 * {
@@ -226,7 +230,7 @@ footer {
 }
 
 .glow {
-    text-shadow: 0 0 2px #fff, 0 0 4px #0056b3;
+    text-shadow: 0 0 2px var(--shadow-primary-color), 0 0 4px var(--shadow-secondary-color);
     font-size: 18px;
     text-transform: uppercase;
 }
